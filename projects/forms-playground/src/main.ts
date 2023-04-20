@@ -7,12 +7,9 @@ import { AppComponent } from './app/app.component';
 import { environment } from './environments/environment';
 
 if (environment.production) {
-  enableProdMode();
+	enableProdMode();
 }
 
 bootstrapApplication(AppComponent, {
-  providers: [
-    importProvidersFrom(RouterModule.forRoot(routes))
-  ]
-})
-  .catch(err => console.error(err));
+	providers: [importProvidersFrom(RouterModule.forRoot(routes))],
+}).catch(err => console.error(err));

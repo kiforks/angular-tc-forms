@@ -5,13 +5,13 @@ import { FooterComponent } from './core/footer/footer.component';
 import { HeaderComponent } from './core/header/header.component';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
-  standalone: true,
-  imports: [RouterModule, HeaderComponent, FooterComponent],
-  changeDetection: ChangeDetectionStrategy.OnPush
+	selector: 'app-root',
+	templateUrl: './app.component.html',
+	styleUrls: ['./app.component.scss'],
+	standalone: true,
+	imports: [RouterModule, HeaderComponent, FooterComponent],
+	changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {
-  constructor(public title: Title) {}
+	constructor(public title: Title) {}
 }
