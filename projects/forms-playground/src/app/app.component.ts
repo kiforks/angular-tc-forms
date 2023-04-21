@@ -1,11 +1,11 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
-import { FooterComponent } from './core/footer/footer.component';
-import { HeaderComponent } from './core/header/header.component';
+import { FooterComponent } from './core/components/footer/footer.component';
+import { HeaderComponent } from './core/components/header/header.component';
 
 @Component({
-	selector: 'app-root',
+	selector: 'root',
 	templateUrl: './app.component.html',
 	styleUrls: ['./app.component.scss'],
 	standalone: true,
